@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
   const addTodo = (task: string) => {
     if (task.trim()) {
-      const newTodo = { task, addedAt: new Date().toLocaleString() }; 
+      const newTodo = { task, addedAt: new Date().toLocaleString() };
       setTodos([...todos, newTodo]);
       toast.success('Task added successfully!');
     } else {
